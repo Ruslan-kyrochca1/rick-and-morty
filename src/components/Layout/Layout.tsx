@@ -19,6 +19,9 @@ const Layout = () => {
           <NavLink className={({ isActive }) => `${classes.item} ${isActive ? classes.active : ''}`} to={publicRoute.locations}>
             Locations
           </NavLink>
+          <NavLink className={({ isActive }) => `${classes.item} ${isActive ? classes.active : ''}`} to={publicRoute.login}>
+            Login
+          </NavLink>
         </nav>
       </header>
       <main>

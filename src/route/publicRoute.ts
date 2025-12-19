@@ -6,4 +6,5 @@ export const publicRoute = {
   episode: (episode: string): string => `/episodes/${episode}`,
   locations: '/locations',
   location: (location: string): string => `/location/${location}`,
+  login: '/login',
 };
