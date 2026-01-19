@@ -7,7 +7,6 @@ const Login = () => {
   const { signin } = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
-  console.log(location);
   const fromPage = location.state?.from?.pathname || '/';
   const handleSubmit: HandleSubmitType = (email: string, password: string) => {
     console.log('Проверка Сервера на соответстие email и паролья: ', email, password);

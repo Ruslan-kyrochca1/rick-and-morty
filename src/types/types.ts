@@ -9,14 +9,43 @@ export type CharacterType = {
   created: string;
 };
 
-type Item = {
+export type LocationType = {
+  id: number;
+  name: string;
+  type: string;
+  dimension: string;
+  created: string;
+};
+
+export type EpisodeType = {
+  id: number;
+  name: string;
+  air_date: string;
+  episode: string;
+  created: string;
+};
+
+export type PaginatedResponse<T> = {
+  info: {
+    count: number;
+    pages: number;
+    next: string | null;
+    prev: string | null;
+  };
+  results: T[];
+};
+
+export type ListItemBase = {
   id: number;
   name: string;
   image?: string;
 };
+
 export type ListType = {
-  items: Item[];
+  items: ListItemBase[];
   type: 'characters' | 'episodes' | 'locations';
+  loadMore: () => void;
+  indexLastItem: number;
 };
 
 export type ImageItemType = {
