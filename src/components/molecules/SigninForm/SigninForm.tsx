@@ -1,7 +1,7 @@
 import React from 'react';
-import TextInput from '../UI/TextInput/TextInput';
-import Button from '../UI/Button/Button';
-import classes from './Singin.module.css';
+import TextInput from '../../atoms/TextInput/TextInput';
+import Button from '../../atoms/Button/Button';
+import classes from './SigninForm.module.css';
 import type { HandleSubmitType } from '../../types/types';
 import { useForm } from '../../hooks/useForm';
 

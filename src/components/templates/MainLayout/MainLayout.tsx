@@ -1,6 +1,6 @@
 import { NavLink, Outlet } from 'react-router-dom';
-import { publicRoute } from '../../route/publicRoute';
-import classes from './Layout.module.scss';
+import { publicRoute } from '../../../route/publicRoute';
+import classes from './MainLayout.module.scss';
 
 const Layout = () => {
   return (

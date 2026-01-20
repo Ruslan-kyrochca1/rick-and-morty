@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import { publicRoute } from '../../../route/publicRoute';
 import classes from './ListItem.module.scss';
-import ImageItem from '../ImageItem/ImageItem';
+import ImageItem from '../../atoms/ImageItem/ImageItem';
 import useLastItemObserver from '../../../hooks/useLastItemObserver';
 
 type ListItemProps = {
