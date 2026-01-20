@@ -2,7 +2,7 @@ import { useParams } from 'react-router-dom';
 import episodes from '../../assets/episode.json';
 import classes from './Episode.module.scss';
 import NotFountItem from '../NotFountItem';
-import ReturnButton from '../../components/UI/ReturnButton/ReturnButton';
+import ReturnButton from '../../components/molecules/ReturnButton/ReturnButton';
 
 const Episode = () => {
   const { id } = useParams<{ id: string }>();

@@ -2,7 +2,7 @@ import { useParams } from 'react-router-dom';
 import locations from '../../assets/location.json';
 import classes from './Location.module.scss';
 import NotFountItem from '../NotFountItem';
-import ReturnButton from '../../components/UI/ReturnButton/ReturnButton';
+import ReturnButton from '../../components/molecules/ReturnButton/ReturnButton';
 
 const Location = () => {
   const { id } = useParams();

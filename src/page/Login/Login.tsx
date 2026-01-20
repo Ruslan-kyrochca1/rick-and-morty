@@ -1,5 +1,5 @@
 import { useLocation, useNavigate } from 'react-router-dom';
-import Signin from '../../components/Singin/Signin';
+import SigninForm from '../../components/molecules/SigninForm/SigninForm';
 import { useAuth } from '../../hooks/useAuth';
 import type { HandleSubmitType } from '../../types/types';
 
@@ -14,7 +14,7 @@ const Login = () => {
       navigate(fromPage, { replace: true });
     });
   };
-  return <Signin handleSubmit={handleSubmit} />;
+  return <SigninForm handleSubmit={handleSubmit} />;
 };
 
 export default Login;

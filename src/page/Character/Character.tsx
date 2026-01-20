@@ -1,9 +1,9 @@
 import { useParams } from 'react-router-dom';
 import characters from '../../assets/characters.json';
 import classes from './Character.module.scss';
-import ImageItem from '../../components/UI/ImageItem/ImageItem';
+import ImageItem from '../../components/atoms/ImageItem/ImageItem';
 import NotFountItem from '../NotFountItem';
-import ReturnButton from '../../components/UI/ReturnButton/ReturnButton';
+import ReturnButton from '../../components/molecules/ReturnButton/ReturnButton';
 
 const Character = () => {
   const { id } = useParams<{ id: string }>();

@@ -1,4 +1,4 @@
-import List from '../../components/UI/List/List';
+import List from '../../components/organisms/ItemsList/List';
 import { useFetchState } from '../../hooks/useFetchState';
 
 const Location = () => {

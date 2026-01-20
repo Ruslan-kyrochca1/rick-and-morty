@@ -3,20 +3,20 @@ import Main from './page/Main/Main';
 
 import NotFount from './page/NotFount';
 import { publicRoute } from './route/publicRoute';
-import Layout from './components/Layout/Layout';
+import MainLayout from './components/templates/MainLayout/MainLayout';
 import Character from './page/Character/Character';
 import Episode from './page/Episode/Episode';
 import Location from './page/Location/Location';
 import { AuthProvider } from './contect/AuthProvider';
-import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute';
-import { Component } from './components/ComponentName';
+import ProtectedRoute from './components/utils/ProtectedRoute';
+import { Component } from './components/utils/ComponentName';
 
 function App() {
   return (
     <>
       <AuthProvider>
         <Routes>
-          <Route path={publicRoute.home} element={<Layout />}>
+          <Route path={publicRoute.home} element={<MainLayout />}>
             <Route index element={<Main />} />
             <Route element={<ProtectedRoute />}>
               <Route path={publicRoute.characters} element={<Component name="Characters" />} />
