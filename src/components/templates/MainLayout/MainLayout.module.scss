@@ -1,0 +1,32 @@
+.navbar {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  background-color: #1e4959;
+}
+
+.item {
+  width: 100%;
+  background-color: #1e4959;
+  padding: 15px 10px;
+  transition: all 0.5s ease-out;
+  &:hover {
+    background-color: #2c5f73;
+  }
+  &:first-child {
+    border-radius: 12px 0px 0px 12px;
+  }
+  &:last-child {
+    border-radius: 0px 12px 12px 0px;
+  }
+  &.active {
+    background-color: rgb(18, 43, 53);
+    color: white;
+  }
+}
